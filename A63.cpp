@@ -48,6 +48,18 @@ int getSum(int n)
     {
         sum += numbers[i];
     }
-    sum -= smallest + greatest;    
+    for (int i = 0; i < n; i++)
+    {
+        if (numbers[i] == smallest)
+        {
+            sum -= smallest;
+        }
+        if (numbers[i] == greatest)
+        {
+            sum -= greatest;
+        }   
+    }
+    
+
     return sum;
 }
