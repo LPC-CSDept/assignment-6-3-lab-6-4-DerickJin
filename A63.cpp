@@ -35,21 +35,16 @@ int getSum(int n)
         {
             smallest = numbers[j];
         }
-        
-    }
-    for (int i = 1; i < n; i++)
-    {
-        if(greatest < numbers[i])
+
+        if(greatest < numbers[j])
         {
-            greatest = numbers[i];
+            greatest = numbers[j];
         }
-    }   
+    }
+     
     for (int i = 0; i < n; i++)
     {
         sum += numbers[i];
-    }
-    for (int i = 0; i < n; i++)
-    {
         if (numbers[i] == smallest)
         {
             sum -= smallest;
@@ -59,6 +54,7 @@ int getSum(int n)
             sum -= greatest;
         }   
     }
+    
     
 
     return sum;
