@@ -10,7 +10,7 @@ int main()
     cin >> n_numbers;
 
     res = getSum(n_numbers);
-    std::cout << "The summation is " << res << "\n";
+    cout << res << "\n";
 
     return 0;
 }
