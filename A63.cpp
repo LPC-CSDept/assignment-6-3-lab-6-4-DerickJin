@@ -44,6 +44,9 @@ int getSum(int n)
      
     for (int i = 0; i < n; i++)
     {
+        
+        // sum should be initialized before its use.
+        
         sum += numbers[i];
         if (numbers[i] == smallest)
         {
